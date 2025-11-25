@@ -4,7 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Faqs() {
-  const [openIndex, setOpenIndex] = useState(null);
+const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
